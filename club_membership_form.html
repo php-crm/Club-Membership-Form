@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Club Membership Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+  <center><h2>Club Membership Form</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" name="name" required  placeholder="Name">  
+          </div>
+         </div>
+         <div class="row">
+            <div class="col-50">
+               <input type="email" name="email" required placeholder="Email">
+            </div>
+            <div class="col-50">
+                <input type="number" name="phone" required placeholder="Phone">
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-50">
+          <label>Address</label>
+          <textarea name="address" id="address"  rows="2" placeholder="Address"></textarea>
+        </div>     
+   </div>
+   <div class="row">
+       <div class="col-50">
+           <input type="text" name="city" required placeholder="City">
+       </div>
+       <div class="col-50">
+          <input type="text" name="state" required placeholder="State">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-50">
+          <input type="number" name="zip_code" required placeholder="Zip Code">
+      </div>
+      <div class="col-50">
+         <input type="text" name="country" required placeholder="Country">
+     </div>
+   </div>
+    <div class="row">
+      <div class="col-50">
+        <label>Date of Birth</label>
+          <input type="date" name="dob" required>
+      </div>
+      <div class="col-50">
+        <label>Where did you hear about us?</label><br><br>
+         <input type="radio" name="hear_about" value="Friend"> A Friend or Colleauge <br><br>
+         <input type="radio" name="hear_about" value="Google"> Google <br><br>
+         <input type="radio" name="hear_about" value="Blog"> Blog Post <br><br>
+         <input type="radio" name="hear_about" value="News"> News Article <br><br>  
+            
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-50">
+        <label for="">Membership Rules</label><br><br>
+           <input type="checkbox" name="member_rule" required  value="Yes">I have read, understood, and accepted the rules for membership.<br><br>
+      </div>
+    </div>
+        <input type="submit" value="SEND" class="btn">
+       </div>
+       </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
